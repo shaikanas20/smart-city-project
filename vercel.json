@@ -1,5 +1,13 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/frontend/index.html" },
+    { "source": "/login", "destination": "/frontend/login.html" },
+    { "source": "/login.html", "destination": "/frontend/login.html" },
+    { "source": "/css/:path*", "destination": "/frontend/css/:path*" },
+    { "source": "/js/:path*", "destination": "/frontend/js/:path*" },
+    { "source": "/modules/:path*", "destination": "/frontend/modules/:path*" }
+  ]
 }
